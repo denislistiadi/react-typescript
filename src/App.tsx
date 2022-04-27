@@ -6,7 +6,7 @@ import "./App.css";
 // import PersonList from './components/PersonList';
 // import Status from './components/Status';
 // import Button from "./components/Button";
-import Container from "./components/Container";
+// import Container from "./components/Container";
 // import Input from "./components/Input";
 
 function App() {
@@ -50,7 +50,7 @@ function App() {
 
       <Input value='' handleChange={(event) => console.log(event.target.value)} /> */}
     
-      <Container styles={{border: '1px solid black', padding: '1rem'}} />
+      {/* <Container styles={{border: '1px solid black', padding: '1rem'}} /> */}
     </div>
   );
 }
