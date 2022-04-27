@@ -5,8 +5,9 @@ import "./App.css";
 // import Person from './components/Person';
 // import PersonList from './components/PersonList';
 // import Status from './components/Status';
-import Button from "./components/Button";
-import Input from "./components/Input";
+// import Button from "./components/Button";
+import Container from "./components/Container";
+// import Input from "./components/Input";
 
 function App() {
   // const personName = {
@@ -41,13 +42,15 @@ function App() {
         <Heading>Hello World!!</Heading>
       </Oscar> */}
 
-      <Button
+      {/* <Button
         handleClick={(e, id) => {
           console.log("Button clicked", e, id);
         }}
       />
 
-      <Input value='' handleChange={(event) => console.log(event.target.value)} />
+      <Input value='' handleChange={(event) => console.log(event.target.value)} /> */}
+    
+      <Container styles={{border: '1px solid black', padding: '1rem'}} />
     </div>
   );
 }
