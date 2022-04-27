@@ -1,22 +1,22 @@
-import React from 'react'
+import React from "react";
+import { Name } from "./Person.types";
 
 type Props = {
-    names: {
-        first: string,
-        last: string
-    }[]
-}
+  names: Name[];
+};
 
 const PersonList = (props: Props) => {
   return (
     <div>
-        {props.names.map(name => {
-            return (
-                <h2>{name.first} {name.last}</h2>
-            )
-        })}
+      {props.names.map((name) => {
+        return (
+          <h2>
+            {name.first} {name.last}
+          </h2>
+        );
+      })}
     </div>
-  )
-}
+  );
+};
 
-export default PersonList
+export default PersonList;
