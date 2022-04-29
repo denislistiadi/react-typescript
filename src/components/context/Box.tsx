@@ -1,9 +1,7 @@
 import React from "react";
 import { ThemeContext } from "./ThemeContext";
 
-type BoxProps = {};
-
-const Box = (props: BoxProps) => {
+const Box = () => {
   const theme = React.useContext(ThemeContext);
   return (
     <div

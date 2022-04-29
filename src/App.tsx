@@ -1,6 +1,8 @@
 import "./App.css";
-import Box from "./components/context/Box";
-import { ThemeContextProvider } from "./components/context/ThemeContext";
+import User from "./components/context/User";
+import { UserContextProvider } from "./components/context/UserContext";
+// import Box from "./components/context/Box";
+// import { ThemeContextProvider } from "./components/context/ThemeContext";
 // import Counter from "./components/state/Counter";
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
@@ -56,9 +58,13 @@ function App() {
       {/* <Container styles={{border: '1px solid black', padding: '1rem'}} /> */}
       {/* <Counter /> */}
 
-      <ThemeContextProvider>
+      {/* <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
+
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
     </div>
   );
 }
