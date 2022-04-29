@@ -1,5 +1,7 @@
 import "./App.css";
-import Counter from "./components/state/Counter";
+import Box from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+// import Counter from "./components/state/Counter";
 // import Heading from './components/Heading';
 // import Oscar from './components/Oscar';
 // import Greet from './components/Greet';
@@ -52,7 +54,11 @@ function App() {
       <Input value='' handleChange={(event) => console.log(event.target.value)} /> */}
 
       {/* <Container styles={{border: '1px solid black', padding: '1rem'}} /> */}
-      <Counter />
+      {/* <Counter /> */}
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
