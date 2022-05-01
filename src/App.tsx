@@ -1,6 +1,7 @@
 import "./App.css";
-import User from "./components/context/User";
-import { UserContextProvider } from "./components/context/UserContext";
+import Counter from "./components/class/Counter";
+// import User from "./components/context/User";
+// import { UserContextProvider } from "./components/context/UserContext";
 // import Box from "./components/context/Box";
 // import { ThemeContextProvider } from "./components/context/ThemeContext";
 // import Counter from "./components/state/Counter";
@@ -62,9 +63,11 @@ function App() {
         <Box />
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      <Counter message="The coun value is " />
     </div>
   );
 }
